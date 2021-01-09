@@ -1,0 +1,29 @@
+# All of the hyperparameters that need tuning 
+
+epochs:
+  desc: number of epochs to train the entire model
+  value: 10
+
+freeze_epochs:
+  desc: number of epochs to train only the new layers
+  value: 5
+
+batch_size:
+  desc: size of each mini-batch
+  value: 8
+
+learning_rate:
+  desc: default learning rate
+  value: 0.001
+
+image_size:
+  desc: item_tfms image input size
+  value: 384
+
+optimizer:
+  desc: optimizer for training
+  value: ranger
+
+model:
+  desc: pretrained model to fine-tune
+  value: resnet50
