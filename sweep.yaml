@@ -1,0 +1,38 @@
+method: bayes
+metric:
+  goal: maximize
+  name: accuracy
+parameters:
+  batch_size:
+    distribution: categorical
+    values:
+    - 8
+    - 16
+  epochs:
+    distribution: int_uniform
+    max: 8
+    min: 7
+  freeze_epochs:
+    distribution: int_uniform
+    max: 4
+    min: 3
+  image_size:
+    distribution: categorical
+    values:
+    - 512
+    - 384
+  learning_rate:
+    distribution: categorical
+    values:
+    - 0.01
+    - 0.001
+  model:
+    distribution: categorical
+    values:
+    - resnet50
+  optimizer:
+    distribution: categorical
+    values:
+    - ranger
+    - SGD
+program: train.py

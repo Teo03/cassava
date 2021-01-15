@@ -2,15 +2,15 @@
 
 epochs:
   desc: number of epochs to train the entire model
-  value: 10
+  value: 6
 
 freeze_epochs:
   desc: number of epochs to train only the new layers
-  value: 5
+  value: 10
 
 batch_size:
   desc: size of each mini-batch
-  value: 8
+  value: 32
 
 learning_rate:
   desc: default learning rate
@@ -18,7 +18,7 @@ learning_rate:
 
 image_size:
   desc: item_tfms image input size
-  value: 384
+  value: 512
 
 optimizer:
   desc: optimizer for training
